@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e2e8f0"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:elevation="4dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="SET YOUR UNIQUE ID"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:elevation="4dp"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="true"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/tv_instruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Unique ID"
+            android:layout_below="@id/tv_title"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:textSize="12sp"/>
+
+        <EditText
+            android:id="@+id/et_unique_id"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/tv_instruction"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:background="#FFFFFF"
+            android:layout_marginEnd="20dp"/>
+
+        <Button
+            android:id="@+id/bt_set_id"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/et_unique_id"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/colorPrimary"
+            android:text="ADD"
+            android:textColor="#FFFFFF"/>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
